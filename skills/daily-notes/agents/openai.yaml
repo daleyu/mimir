@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daily Notes"
+  short_description: "Update Org tasks and tidy notes from your daily recap"
+  default_prompt: "Use $daily-notes to process my daily recap, update my Org tasks, plan tomorrow, and format my notes without deleting content."

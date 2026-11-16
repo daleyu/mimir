@@ -1,0 +1,45 @@
+#+TITLE: <Plan title>
+#+DATE: <YYYY-MM-DD>
+#+STATUS: DRAFT
+#+TODO: DRAFT REVIEW APPROVED | DONE DROPPED
+#+TODO: FEEDBACK | ADDRESSED
+#+TODO: QUESTION | ANSWERED
+#+CATEGORY: <slug>
+#+STARTUP: overview
+
+# Copy to $MIMIR_HOME/plans/<YYYY-MM-DD>-<slug>.org. Status flows DRAFT -> REVIEW ->
+# APPROVED -> DONE (or DROPPED). Pure Org syntax only; no Markdown.
+# Feedback: add a "* FEEDBACK <topic>" heading anywhere, or an inline
+# "# FEEDBACK: ..." line. The agent replies under it and marks it ADDRESSED.
+# Open questions are QUESTION headings (not checkboxes) so they show in the
+# todo views; CATEGORY lets you filter the agenda to this plan.
+
+* Goal
+Why this matters and what done looks like.
+
+* Context
+- Known facts, with links: [[https://example.com][source]]
+- Ruled out:
+
+* Approach
+** Step 1: <summary>
+What changes and where (=path/to/file.go=).
+#+begin_src go
+// sketch of the change
+#+end_src
+
+** Step 2: <summary>
+
+* Verification
+- Tests and CI to run:
+#+begin_src sh
+make test
+#+end_src
+
+* Risks and open questions
+** QUESTION <question for the user>
+
+* FEEDBACK Example (delete me)
+The user's note goes here.
+** Agent reply
+One-line response; then change FEEDBACK to ADDRESSED.
